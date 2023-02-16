@@ -5,6 +5,10 @@ import Welcome from './Components/Welcome';
 import Hello from './Components/Hello';
 import Message from './Components/Message';
 import Counter from './Components/Counter';
+import StyleSheet from './Components/Stylesheet'
+import Inline from './Components/Inline';
+import './appStyles.css'
+import styles from './appStyles.module.css'
 
 function App() {
   return (
@@ -21,7 +25,15 @@ function App() {
       <Message />
       <br />
       <Counter />
-    </div>
+
+      <StyleSheet primary={true} />
+
+      <Inline />
+
+
+      <h1 className='error'>Error</h1>
+      <h1 className={styles.success}>Success</h1>
+    </div >
   );
 }
 
